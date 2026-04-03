@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dkk3i83c4be5q"]
+[gd_scene load_steps=4 format=3 uid="uid://dkk3i83c4be5q"]
 
 [ext_resource type="Script" uid="uid://ckceunlatcabp" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://pfob18bmnypu" path="res://player.tscn" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bnr0hx1f4mina" path="res://assets/sprites/icon.svg" id="3_1bvp3"]
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_ig7tw")
+
+[node name="Player" parent="." instance=ExtResource("2_h2yge")]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(5.02443, 0, 0, 0, 4.9325705, 0, 0, 0, 1, 0, 3.1379623, 12.578031)
+texture = ExtResource("3_1bvp3")
